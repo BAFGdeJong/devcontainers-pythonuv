@@ -1,18 +1,8 @@
 {
-    "name": "Golang test dev container",
-    "build": {
-        "dockerfile": "Dockerfile"
-    },
-    // Allow the devcontainer to run host docker commands, see https://github.com/devcontainers/templates/tree/main/src/docker-outside-of-docker
-    "features": {
-        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
-            "version": "latest",
-            "mobdy": true
-        }
-    },
-    "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
-    },
+    "name": "Python UV",
+    "dockerComposeFile": "compose.yaml",
+    "service": "development",
+    "workspaceFolder": "/workspaces/vscode",
     "extensions": [
         "ms-python.python",
         "ms-python.debugpy",
@@ -26,7 +16,11 @@
         "tamasfe.even-better-toml",
         "charliermarsh.ruff",
         "ms-python.black-formatter",
-        "njqdev.vscode-python-typehint"
+        "njqdev.vscode-python-typehint",
+        "cweijan.vscode-mysql-client2"
     ],
-    "forwardPorts": [3000]
+    "features": {
+        "ghcr.dockerproxy.com/devcontainers/features/docker-in-docker:2": {}
+    },
+    "forwardPorts": [5001]
 }
