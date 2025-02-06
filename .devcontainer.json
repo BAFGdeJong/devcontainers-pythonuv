@@ -1,0 +1,32 @@
+{
+    "name": "Golang test dev container",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    // Allow the devcontainer to run host docker commands, see https://github.com/devcontainers/templates/tree/main/src/docker-outside-of-docker
+    "features": {
+        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+            "version": "latest",
+            "mobdy": true
+        }
+    },
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-python.debugpy",
+        "KevinRose.vsc-python-indent",
+        "mgesbert.python-path",
+        "kaih2o.python-resource-monitor",
+        "oderwat.indent-rainbow",
+        "ms-azuretools.vscode-docker",
+        "usernamehw.errorlens",
+        "njpwerner.autodocstring",
+        "tamasfe.even-better-toml",
+        "charliermarsh.ruff",
+        "ms-python.black-formatter",
+        "njqdev.vscode-python-typehint"
+    ],
+    "forwardPorts": [3000]
+}
