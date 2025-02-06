@@ -1,0 +1,12 @@
+services:
+  development:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    stdin_open: true
+    command: sleep infinity
+    user: root
+    ports:
+        - 5001:5001
+    volumes:
+      - .:/workspaces/vscode
