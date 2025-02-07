@@ -36,8 +36,8 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
-          context: ./docker
-          file: ./docker/Dockerfile
+          context: ./devcontainer
+          file: ./devcontainer/Dockerfile
           push: true
           tags: ${{ steps.repo_slug.outputs.result }}:latest
 
