@@ -4,7 +4,8 @@
     // "dockerComposeFile": "compose.yaml",
     // "service": "development",
     "image": "ghcr.io/bafgdejong/devcontainers-pythonuv:latest-debian",
-    "workspaceFolder": "/workspaces/devcontainers-pythonuv",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/pythonuv,type=bind",
+    "workspaceFolder": "/workspaces/pythonuv",
     "extensions": [
         "ms-python.python",
         "ms-python.debugpy",

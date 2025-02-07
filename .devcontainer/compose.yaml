@@ -7,4 +7,4 @@ services:
     ports:
         - 5001:5001
     volumes:
-      - ..:/workspaces/devcontainers-pythonuv
+      - ..:/workspaces/pythonuv
