@@ -1,10 +1,10 @@
 services:
   development:
-    image: ghcr.io/bafgdejong/devcontainers-pythonuv:latest
+    image: ghcr.io/bafgdejong/devcontainers-pythonuv:latest-debian
     stdin_open: true
     command: sleep infinity
     user: root
     ports:
         - 5001:5001
     volumes:
-      - ..:/workspaces/vscode
+      - ..:/workspaces/devcontainers-pythonuv

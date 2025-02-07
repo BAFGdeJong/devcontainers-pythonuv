@@ -1,8 +1,10 @@
 {
     "name": "Python UV",
-    "dockerComposeFile": "compose.yaml",
-    "service": "development",
-    "workspaceFolder": "/workspaces/vscode",
+    // // Can be uncommented to use the compose.yaml and build instead of pull.
+    // "dockerComposeFile": "compose.yaml",
+    // "service": "development",
+    "image": "ghcr.io/bafgdejong/devcontainers-pythonuv:latest",
+    "workspaceFolder": "/workspaces/devcontainers-pythonuv",
     "extensions": [
         "ms-python.python",
         "ms-python.debugpy",
@@ -19,6 +21,7 @@
         "njqdev.vscode-python-typehint",
         "cweijan.vscode-mysql-client2"
     ],
+    // // Enables using docker inside the container (Docker in docker)
     "features": {
         "ghcr.dockerproxy.com/devcontainers/features/docker-in-docker:2": {}
     },
