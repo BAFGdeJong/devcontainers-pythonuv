@@ -1,12 +1,10 @@
 services:
   development:
-    build: 
-      context: .
-      dockerfile: Dockerfile
+    image: ghcr.io/bafgdejong/devcontainers-pythonuv:latest
     stdin_open: true
     command: sleep infinity
     user: root
     ports:
         - 5001:5001
     volumes:
-      - .:/workspaces/vscode
+      - ..:/workspaces/vscode
