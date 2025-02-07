@@ -43,7 +43,7 @@ jobs:
           context: ./.devcontainer
           file: ./.devcontainer/Dockerfile
           push: true
-          tags: ${{ steps.repo_slug.outputs.result }}:latest
+          tags: ${{ steps.repo_slug.outputs.result }}:latest-debian
 
       - name: Logout from GitHub Container Registry
         run: docker logout ghcr.io
