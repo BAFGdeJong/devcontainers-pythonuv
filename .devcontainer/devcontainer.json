@@ -3,7 +3,7 @@
     // // Can be uncommented to use the compose.yaml and build instead of pull.
     // "dockerComposeFile": "compose.yaml",
     // "service": "development",
-    "image": "ghcr.io/bafgdejong/devcontainers-pythonuv:latest",
+    "image": "ghcr.io/bafgdejong/devcontainers-pythonuv:latest-debian",
     "workspaceFolder": "/workspaces/devcontainers-pythonuv",
     "extensions": [
         "ms-python.python",
